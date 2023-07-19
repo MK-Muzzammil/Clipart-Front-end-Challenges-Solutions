@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@1,400;1,600&display=swap');
+
+*{
+  padding: 0;margin: 0;box-sizing: border-box;
+}
+:root{
+
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+--white:hsla(0, 21%, 95%, 0.896);
+--font-size:18px;
+--font-family: 'Bai Jamjuree', sans-serif;
+--weight-para:400;
+--weight-high:600;
+
+}
+
+/* ===================================Header CSs================================== */
+.headerContainer{
+
+  background-image: url(images/bg-header-desktop.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap:0.5rem;
+  outline: none;
+  border: none;
+  padding: 1rem;
+
+
+
+
+}
+
+
+/* ====================All Heading Colors and fonts setting ========================== */
+.LargeheadingClass ,.mainBodyHeading ,.lastSecHeading{
+  font-family: var(--font-family);
+  font-weight: var(--weight-high);
+  color:var(--Dark-Grayish-Blue);
+  max-width: 100%;
+
+}
+.paragraphClass,.mainBodyParagraph{
+  font-family: var(--font-family);
+  font-weight: var(--weight-para);
+
+}
+#headerPara ,.mainBodyParagraph ,#LastSecPara{
+  color:var(--Grayish-Blue);
+  padding-block: 0.4rem;
+  max-width: 100%;
+
+}
+
+.logoContainer{
+  padding-top: 2rem;
+}
+.logoContainer img ,.fotterLogoContainer img{
+  height: 70px;
+  width: 70px;
+
+
+}
+.headerContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width:35rem;
+
+}
+
+/* =========================All buttons Handling=================== */
+.buttonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:0.5rem;
+  
+}
+
+.button{
+  border-radius: 15px;
+  height: 2rem;
+  width: 10rem;
+  padding: 0.5rem;
+  text-align: center;
+  outline: none;
+  border: none;
+
+}
+#iosButton{
+  background-color: var(--Strong-Cyan);
+  color: var(--white);
+}
+#MacButton{
+  background-color: var(--Light-Blue);
+  color: var(--white);
+}
+
+/* ===================================Main Body Css================================== */
+
+
+/* =========================All Content Containers Setting==========================  */
+.keepTrackSection{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+
+
+}
+.contentDivision ,.AccessClipContentContainer,.superChargeContentDivision ,.clipBoardLastSecContentContainer{
+  text-align: center;
+  max-width: 38rem;
+  margin:2rem auto;
+
+
+}
+
+.keepTrackImageAndContentDiv{
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  padding: 1rem;
+
+
+}
+
+.imageSideContainerDivision{
+  line-height: 1.5;
+  width:20rem;
+}
+
+.imageContainer{
+  max-width:35rem;
+}
+.imageContainer img{
+  max-width: 100%;
+  object-fit: cover;
+
+}
+.acessClipImageContainer{
+  max-width:30rem;
+  margin:0 auto;
+
+}
+.acessClipImageContainer img ,.LogoIcon img{
+  max-width: 100%;
+  object-fit: cover;
+
+}
+
+
+/* ========================superCharge Section Css ========================= */
+.superChargeYourWorkFlowSection{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;  
+  justify-content: center;
+
+
+}
+.sliderIconsAndContentDivision{
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+
+/* ======================Seconnd way to do this ================== */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap:1rem;
+
+}
+.companyLogoIconsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+  padding-block: 3rem;
+
+}
+
+.sliderItem{
+  width:250px;
+}
+
+.LogoIcon{
+  width:200px
+}
+
+/* ============================================Footer Css============================= */
+
+.footerContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  padding-block: 1.5rem;
+  background-color: var(--white);
+
+}
+.anchorTagsContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 3.5rem;
+
+}
+.anchorTagDiv{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+
+}
+.anchorTagDiv a{
+  text-decoration: none;
+  color:var(--Dark-Grayish-Blue);
+  font-family: var(--font-family);
+
+}
+  
+.socialIconsContainer{
+  display: flex;
+  flex-direction: row;
+  gap:1.3rem;
+
+}
+
+
+
+/* ===============================Active States Hover effect============================ */
+.anchorTagDiv a:hover{
+  cursor: pointer;
+  color:var(--Strong-Cyan);
+
+}
+.Icon a i:hover{
+  cursor: pointer;
+  color: var(--Strong-Cyan) !important;
+
+}
+#iosButton:hover{
+  cursor: pointer;
+  box-shadow: 1.5px 1.5px 1px 0.5px var(--Strong-Cyan);
+
+}
+#MacButton:hover{
+  cursor: pointer;
+  box-shadow: 1.5px 1.5px 1px 0.5px var(--Light-Blue);
+
+  
+}
+
+
+/* ===================================Media Queires ================= */
+
+@media screen and (max-width:450px) {
+  .buttonContainer{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+@media screen and (max-width:520px) {
+  .keepTrackImageAndContentDiv{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+  @media screen and (max-width:620px) {
+    .footerContainer{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap:1.5rem;
+      
+    }
+    .anchorTagsContainer{
+      flex-direction: column;
+      gap:1.5rem; 
+    }
+
+}
+
+@media screen and (max-width:770px) {
+  .sliderIconsAndContentDivision{
+    flex-wrap: wrap;
+    
+  }
+  .companyLogoIconsContainer{
+    flex-wrap: wrap;
+  }
+}
